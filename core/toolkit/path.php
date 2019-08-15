@@ -6,7 +6,7 @@
 
 		// build a path from a string
 		function __construct($pathStr){
-			$ex = explode(DS, $pathStr);
+			$ex = explode(DIRECTORY_SEPARATOR, $pathStr);
 			$split = [];
 
 			foreach($ex as $e){
@@ -24,7 +24,7 @@
 
 		// return string representation of path
 		function toString(){
-			return DS . implode($this->path, DS);
+			return DIRECTORY_SEPARATOR . implode($this->path, DIRECTORY_SEPARATOR);
 		}
 
 		// get last object from path
