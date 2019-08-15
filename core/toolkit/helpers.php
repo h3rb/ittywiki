@@ -32,13 +32,13 @@
 
 	// create a linked stylesheet based on filename
 	function css($filename){
-		$path = g::get('root.core.url') . DS . 'css' . DS . $filename . '.css';
+		$path = g::get('root.core.url') . DIRECTORY_SEPARATOR . 'css' . DIRECTORY_SEPARATOR . $filename . '.css';
 		return '<link rel="stylesheet" type="text/css" href="' . $path . '" />';
 	}
 
 	// create a linked javascript based on filename
 	function js($filename){
-		$path = g::get('root.core.url') . DS . 'js' . DS . $filename . '.js';
+		$path = g::get('root.core.url') . DIRECTORY_SEPARATOR . 'js' . DIRECTORY_SEPARATOR . $filename . '.js';
 		return '<script type="text/javascript" src="' . $path . '"></script>';
 	}
 
