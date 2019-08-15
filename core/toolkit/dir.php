@@ -29,11 +29,11 @@
 
 			foreach($files as $f){
 				// "file" is a directory
-				if(dir::check($this->path->toString() . DS . $f)){
-					$dir = new dir($this->path->toString() . DS . $f);
+				if(dir::check($this->path->toString() . DIRECTORY_SEPARATOR . $f)){
+					$dir = new dir($this->path->toString() . DIRECTORY_SEPARATOR . $f);
 					$this->files[] = $dir;
 				} else {
-					$file = new file($this->path->toString() . DS . $f);
+					$file = new file($this->path->toString() . DIRECTORY_SEPARATOR . $f);
 					$this->files[] = $file;
 				}
 			}
