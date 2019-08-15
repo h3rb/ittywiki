@@ -78,7 +78,7 @@
 				$template = 'notfound';
 			}
 
-			include_once(g::get('root.core') . DS . 'templates' . DS . $template . '.php');
+			include_once(g::get('root.core') . DIRECTORY_SEPARATOR . 'templates' . DIRECTORY_SEPARATOR . $template . '.php');
 		}
 
 	}
